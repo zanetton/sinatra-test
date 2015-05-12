@@ -5,6 +5,8 @@ get'/' do
   erb :index
 end
 
-get '/secret' do
-  'This isn\'t so secret now!'
+get '/hello' do
+  @visitor = params[:name]
+  @visitor1 = params[:last_name]
+  erb :index
 end
